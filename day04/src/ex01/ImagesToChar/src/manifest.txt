@@ -1,0 +1,3 @@
+Manifest-Version: 1.0
+Main-Class: Java.edu.school21.printer.app.Program
+Created-By: 1.8.0_392 (Amazon.com Inc.)
