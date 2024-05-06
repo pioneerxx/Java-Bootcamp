@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<StackPane xmlns="http://javafx.com/javafx"
+           xmlns:fx="http://javafx.com/fxml"
+           fx:controller="edu.school21.tanks.controller.GameSceneController"
+           prefHeight="600"
+           prefWidth="1400"
+           id="pane"
+           fx:id="pane">
+    <ProgressBar fx:id="topHealthBar" StackPane.alignment="TOP_RIGHT" prefHeight="40" prefWidth="400" progress="1"
+                 style="-fx-accent: red; -fx-border-color: black"/>
+    <ImageView StackPane.alignment="TOP_CENTER" fitWidth="100" fitHeight="100" fx:id="topTank">
+        <StackPane.margin>
+            <Insets top="50"/>
+        </StackPane.margin>
+        <Image url="topTank.png"/>
+    </ImageView>
+    <ImageView StackPane.alignment="BOTTOM_CENTER" fitHeight="100" fitWidth="100" fx:id="botTank">
+        <StackPane.margin>
+            <Insets bottom="50"/>
+        </StackPane.margin>
+        <Image url="botTank.png"/>
+    </ImageView>
+    <ProgressBar fx:id="botHealthBar" StackPane.alignment="BOTTOM_LEFT" prefWidth="400" prefHeight="40" progress="1"
+                 style="-fx-accent: red; -fx-border-color: black"/>
+</StackPane>
